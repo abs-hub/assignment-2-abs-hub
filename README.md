@@ -1,5 +1,6 @@
 # Assignment 2: Node modules and packages
 
+## Requirements
 Start out with the version of the simple HTTP server example from class that's included in this project.  This is a working HTTP file server. You'll be making several modifications to the starter code, and adding some files of your own.
 
 1. **Manage dependencies in your project:** Add a `package.json` to manage dependencies in your project. Remember that `npm init` can help you here.
@@ -9,3 +10,17 @@ Start out with the version of the simple HTTP server example from class that's i
 5. **Create some HTML and image assets to serve:**  Add a static HTML file in `htdocs` to the project for the server to serve. It's fine to add some images, CSS or other assets as well, if you like. Essentially, create a simple page for your server to serve. You won't be graded on your HTML page being fancy - just provide something for your server to deliver.
 6. Push your code back up to github, and deploy it to DO
 7. Submit the URL to the page served by your server on DO, and the URL to your Github repo to Assignment 2 in Canvas
+
+## Milestones
+* Added package.json using npm init
+* Used third-party package `chalk` to log query parameters and included in dependancy in package.json.
+* Created my own module called as `mimeTypes` which gets the available mimeTypes to serve.
+* Parsed the query string arguments from the URL. So, if the URL looks like: `http://localhost:8080/?name=Javascript&type=NodeJs&abc=xyz`  then log would print :
+```
+name: Javascript
+type: NodeJs
+abc: xyz
+```
+* Created index.html which is taken from one of my previous assignment from CS50 which serves HTML and is added in `htdocs` folder. There is also a folder called as images which has couole of images and a css folder which has some css files required for index.html. 
+* Pushed code to github and deployed to DO.
+* URL: http://159.65.107.61:8080/

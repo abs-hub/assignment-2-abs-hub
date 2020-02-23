@@ -1,0 +1,84 @@
+//colors
+$highlight_color: #d10c24;
+$background_color: #e6e6e6;
+
+//fonts
+$font_open_sans: "Open Sans script=all rev=1";
+$font_adobe_blank: "Adobe Blank";
+
+.row {
+	font-size: 1.5rem;
+	#my_name {
+		color: $highlight_color;
+		font-weight: 600;
+		font-style: normal;
+	}
+	#my_headline {
+		font-weight: 400;
+		color: $highlight_color;
+	}
+	#my_intro {
+		font-family: $font_open_sans, $font_adobe_blank;
+		font-size: 1.25rem;
+	}
+	.table {
+		font-size: 1rem;
+	}
+}
+.navbar {
+	background: $background_color;
+	> .collapse > .navbar-nav > .active > a {
+		color: $highlight_color;
+	}
+}
+
+/*sample for inheritance*/
+.card {
+    border-radius: 10px;
+    padding: 30px;
+    border: 0;
+    background-color: transparent;
+    .card-title {
+      color: $highlight_color;
+    }
+}
+$project-gradient: linear-gradient(to top left, $background_color, #8a8a8c);
+.projects-card {
+    @extend .card;
+    background: $project-gradient;
+}
+
+/*social media link with rotate effect*/
+//@extend-elements
+//.social, .social ul, .social li
+%extend_social {
+	margin: 0;
+	padding: 5px;
+	text-decoration: none;
+}
+
+
+.social {
+	@extend %extend_social;
+	ul {
+		@extend %extend_social;
+	}
+	li {
+		@extend %extend_social;
+		list-style: none outside none;
+		display: inline-block;
+	}
+	.fa {
+		width: 40px;
+		height: 40px;
+		padding-top: 12px;
+		border-radius: 20px;
+		transition: all ease 0.3s;
+		transform: rotate(-360deg);
+		&:hover {
+			text-decoration: none;
+			transition: all ease 0.3s;
+			transform: rotate(360deg);
+		}
+	}
+}

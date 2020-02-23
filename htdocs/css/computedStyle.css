@@ -1,0 +1,68 @@
+.row {
+  font-size: 1.5rem;
+}
+.row #my_name {
+  color: #d10c24;
+  font-weight: 600;
+  font-style: normal;
+}
+.row #my_headline {
+  font-weight: 400;
+  color: #d10c24;
+}
+.row #my_intro {
+  font-family: "Open Sans script=all rev=1", "Adobe Blank";
+  font-size: 1.25rem;
+}
+.row .table {
+  font-size: 1rem;
+}
+
+.navbar {
+  background: #e6e6e6;
+}
+.navbar > .collapse > .navbar-nav > .active > a {
+  color: #d10c24;
+}
+
+/*sample for inheritance*/
+.card, .projects-card {
+  border-radius: 10px;
+  padding: 30px;
+  border: 0;
+  background-color: transparent;
+}
+.card .card-title, .projects-card .card-title {
+  color: #d10c24;
+}
+
+.projects-card {
+  background: linear-gradient(to top left, #e6e6e6, #8a8a8c);
+}
+
+/*social media link with rotate effect*/
+.social li, .social ul, .social {
+  margin: 0;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.social li {
+  list-style: none outside none;
+  display: inline-block;
+}
+.social .fa {
+  width: 40px;
+  height: 40px;
+  padding-top: 12px;
+  border-radius: 20px;
+  transition: all ease 0.3s;
+  transform: rotate(-360deg);
+}
+.social .fa:hover {
+  text-decoration: none;
+  transition: all ease 0.3s;
+  transform: rotate(360deg);
+}
+
+/*# sourceMappingURL=computedStyle.css.map */

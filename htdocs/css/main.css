@@ -1,0 +1,46 @@
+/*common css for all pages*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  background-color: #F6F6F8;
+}
+
+#content-head {
+  margin-top: 5%;
+  height: 80%;
+  margin-bottom: 5%;
+}
+
+#my_pic {
+  width: 100%;
+}
+
+/*put border for ipad width- 768px and above*/
+@media (min-width: 768px) {
+  img {
+    border: 1px solid black;
+    width: auto;
+  }
+  #myTable {
+    width: 50%;
+  }
+}
+
+/*reduce the font-size for crousel for small screen devices*/
+@media only screen and (max-width: 576px) {
+    .carousel-caption {
+        h5 {
+            font-size: 1rem;
+        }
+    }
+}
+/*this is to make the crousel caption below image instead of on the image*/
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+#myTable {
+  margin: auto;
+  text-align: center;
+}
